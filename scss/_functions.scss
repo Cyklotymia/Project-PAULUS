@@ -1,0 +1,2 @@
+@function vw($px-vw, $base-vw: 1292px)    
+ { @return ($px-vw * 100vw) / $base-vw}

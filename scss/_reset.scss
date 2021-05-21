@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    height: 200vh;
+    background: white
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    max-width: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bold{
+    font-weight: $bold-weight;
+}
