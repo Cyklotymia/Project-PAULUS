@@ -3231,6 +3231,80 @@ body {
   }
 }
 
+.sliderLogos {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .sliderLogos {
+    display: block;
+    padding: 30px 2vw;
+    overflow: hidden;
+  }
+  .sliderLogos .sliderLogos-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item {
+    width: 20%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item .sliderLogos-img-container {
+    position: relative;
+    display: block;
+    min-height: 50px;
+    height: 5vw;
+    max-height: 75px;
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item .sliderLogos-img-container .sliderLogos-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 70%;
+    display: block;
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item .sliderLogos-img-container::before {
+    display: block;
+    content: "";
+    height: 5vw;
+    max-height: 80px;
+    width: 1px;
+    background-color: #DCDDE0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item:nth-child(1) .sliderLogos-img-container::before {
+    display: none;
+  }
+  .sliderLogos .sliderLogos-container .sliderLogos-item:hover .sliderLogos-img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
