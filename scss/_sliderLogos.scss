@@ -6,34 +6,46 @@
 @media (min-width:770px) {
     .sliderLogos {
         display: block;
-        padding: 30px 2vw;
+        margin: 62px 3vw 55px 3vw;
         overflow: hidden;
-       
-
+        width: calc(100vw - 6vw);
+        
+       .wrapper{
+overflow: hidden;
 
 
 
 
 
         .sliderLogos-container {
-            @include flexParent(row, nowrap, flex-start, flex-start);
+            @include flexParent(row, nowrap, space-between, center);
+            transition: 0.4s linear;
+            max-width: calc(1600px + 20%);
+            
 
 
 
             .sliderLogos-item {
-
-                width: 20%;
-                transition: 0.3s;
+position: relative;
+                width: calc(20% - 6vw);
+                transition: 0.4s linear;
+                // max-width: 309px;
+                max-height: 130px;
+                width: 100%;
 
 
 
 
                 .sliderLogos-img-container {
                     position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
                     display: block;
                     min-height: 50px;
                     height: 5vw;
-                    max-height: 75px;
+                    max-height: 130px;
+                    width: 100%;
+                    
 
 
 
@@ -43,9 +55,25 @@
                         transform: translate(-50%, -50%);
                         filter: grayscale(1);
                         transition: 0.3s;
-
+                        padding: 5px 0;
                         height: 70%;
                         display: block;
+                    }
+                }
+                @media (min-width:1600px) {
+                    .sliderLogos-img-container{
+                    height: 120px;
+                    .sliderLogos-img {
+                        padding: 10px 0;
+                    }
+                    }
+                }
+                @media (min-width:1900px) {
+                    .sliderLogos-img-container{
+                    height: 130px;
+                    .sliderLogos-img {
+                        padding: 15px 0;
+                    }
                     }
                 }
 
@@ -71,7 +99,7 @@
             .sliderLogos-item:hover .sliderLogos-img{
             filter: grayscale(0);
             }
-
+        }
         }
     }
     // .sliderLogos.active{
@@ -81,3 +109,9 @@
     //     }
     // }
 }
+// @media (min-width:1600px) {
+//     .sliderLogos{
+//         width: 1600px;
+//         margin: 30px 0
+//     }
+// }
