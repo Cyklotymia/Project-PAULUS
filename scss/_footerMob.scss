@@ -1,0 +1,96 @@
+.footer {
+    background-color: lightcoral;
+
+    .footer--mob {
+        .footer__list {
+            background-color: lightgoldenrodyellow;
+
+            .footer__list-element {
+                background-color: lightgreen;
+
+                .footer__list-element-text-container {
+                    background-color: lightgrey;
+
+                    .footer__list-element-header {
+                        background-color: lightsalmon;
+                    }
+
+                    .footer__list-element-icon {
+                        background-color: lightskyblue;
+                    }
+                }
+
+                .footer__contact-container {
+                    background-color: lime;
+
+                    .footer__contact {
+                        background-color: magenta;
+
+                        .footer__contact-icon {
+                            background-color: maroon;
+                        }
+
+                        .footer__contact-number {
+                            background-color: mediumblue;
+                        }
+
+                        .footer__contact-text {
+                            background-color: mediumpurple;
+                        }
+                    }
+
+                    .contact__button {
+                        background-color: mediumpurple;
+
+                        .contact__button-text {
+                            background-color: mediumspringgreen;
+                        }
+                    }
+                }
+                .footer__offer-container{
+                    background-color: mediumvioletred;
+                    .footer__offer-list{
+                        background-color: olive;
+                        .footer__offer-list-element{
+                            background-color: palegreen;
+                            .footer__offer-list-element-link{
+                                background-color: plum;
+                            }
+                        }
+                    }
+                }
+                .footer__place-container{
+                    background-color: powderblue;
+                    .footer__place-header{
+                        background-color: purple;
+
+                    }
+                    .footer__place-text{
+                        background-color: red;
+                    }
+                    .footer__place-text--big{
+                        background-color: salmon;
+                    }
+                    .footer__place-button{
+                        background-color: seagreen;
+                        .footer__place-button-text{
+                            background-color: slategray;
+                        }
+                    }
+                    .footer__place-img-container{
+                        background-color: springgreen;
+                        .footer__place-img{
+                            background-color: wheat;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__text-container{
+            background-color: yellow;
+            .footer__text{
+                background-color: tan;
+            }
+        }
+    }
+}

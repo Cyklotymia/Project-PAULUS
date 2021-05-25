@@ -1,0 +1,93 @@
+.footer--desc{
+    background-color: aqua;
+    display: none;
+    .footer__upside{
+        background-color: brown;
+        .info{
+            background-color: cadetblue;
+            .info__offer{
+                background-color: chartreuse;
+                .info__offer-offer{
+                    background-color: chocolate;
+                    .info__offer-offer-header{
+                        background-color: coral;
+                    }
+                    .info__offer-list{
+                        background-color: crimson;
+                        .info__offer-list-element{
+                            background-color: darkblue;
+                            .info__offer-list-element-link{
+                                background-color: darkcyan;
+                            }
+                        }
+                    }
+                }
+                .info__offer-place{
+                    background-color: darkgreen;
+                    .info__offer-place-container{
+                        background-color: darkkhaki;
+                        .info__offer-place-header{
+                            background-color: darkolivegreen;
+                        }
+                        .info__offer-place-text{
+                            background-color: darkred;
+                        }
+                        .info__offer-place-text--big{
+                            background-color: darkseagreen;
+                        }
+                        .info__offer-place-button{
+                            background-color: darkslategray;
+                            .info__offer-place-button-text{
+                                background-color: darkviolet;
+                            }
+                        }
+                    }
+                    .info__offer-place-img-container{
+                        background-color: deeppink;
+                        .info__offer-place-img{
+                            background-color: deepskyblue;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .contact{
+            background-color: deepskyblue;
+            .contact__container{
+                background-color: dimgray;
+                .contact__header{
+                    background-color: dodgerblue;
+                }
+                .contact__info-container{
+                    background-color: firebrick;
+                    .contact__icon-container{
+                        background-color: floralwhite;
+                    }
+                    .contact__number{
+                        background-color: forestgreen;
+                    }
+                    .contact__text{
+                        background-color: gold;
+                    }
+                }
+                .contact__button{
+                    background-color: greenyellow;
+                    .contact__button-text{
+                        background-color: indianred;
+                    }
+                }
+            }
+        }
+
+    }
+    .footer__downside{
+        background-color: ivory;
+        .footer__downside-text{
+            background-color: lawngreen;
+            .footer__downside-text-link{
+                background-color: lightblue;
+            }
+        }
+    }
+}

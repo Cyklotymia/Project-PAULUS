@@ -3341,6 +3341,235 @@ body {
   }
 }
 
+.footer--desc {
+  background-color: aqua;
+  display: none;
+}
+
+.footer--desc .footer__upside {
+  background-color: brown;
+}
+
+.footer--desc .footer__upside .info {
+  background-color: cadetblue;
+}
+
+.footer--desc .footer__upside .info .info__offer {
+  background-color: chartreuse;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-offer {
+  background-color: chocolate;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-offer-header {
+  background-color: coral;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list {
+  background-color: crimson;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list .info__offer-list-element {
+  background-color: darkblue;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list .info__offer-list-element .info__offer-list-element-link {
+  background-color: darkcyan;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place {
+  background-color: darkgreen;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container {
+  background-color: darkkhaki;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-header {
+  background-color: darkolivegreen;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-text {
+  background-color: darkred;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-text--big {
+  background-color: darkseagreen;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-button {
+  background-color: darkslategray;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-button .info__offer-place-button-text {
+  background-color: darkviolet;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-img-container {
+  background-color: deeppink;
+}
+
+.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-img-container .info__offer-place-img {
+  background-color: deepskyblue;
+}
+
+.footer--desc .footer__upside .contact {
+  background-color: deepskyblue;
+}
+
+.footer--desc .footer__upside .contact .contact__container {
+  background-color: dimgray;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__header {
+  background-color: dodgerblue;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__info-container {
+  background-color: firebrick;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__icon-container {
+  background-color: floralwhite;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__number {
+  background-color: forestgreen;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__text {
+  background-color: gold;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__button {
+  background-color: greenyellow;
+}
+
+.footer--desc .footer__upside .contact .contact__container .contact__button .contact__button-text {
+  background-color: indianred;
+}
+
+.footer--desc .footer__downside {
+  background-color: ivory;
+}
+
+.footer--desc .footer__downside .footer__downside-text {
+  background-color: lawngreen;
+}
+
+.footer--desc .footer__downside .footer__downside-text .footer__downside-text-link {
+  background-color: lightblue;
+}
+
+.footer {
+  background-color: lightcoral;
+}
+
+.footer .footer--mob .footer__list {
+  background-color: lightgoldenrodyellow;
+}
+
+.footer .footer--mob .footer__list .footer__list-element {
+  background-color: lightgreen;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container {
+  background-color: lightgrey;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-header {
+  background-color: lightsalmon;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-icon {
+  background-color: lightskyblue;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container {
+  background-color: lime;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact {
+  background-color: magenta;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-icon {
+  background-color: maroon;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-number {
+  background-color: mediumblue;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-text {
+  background-color: mediumpurple;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .contact__button {
+  background-color: mediumpurple;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .contact__button .contact__button-text {
+  background-color: mediumspringgreen;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__offer-container {
+  background-color: mediumvioletred;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list {
+  background-color: olive;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element {
+  background-color: palegreen;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element .footer__offer-list-element-link {
+  background-color: plum;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container {
+  background-color: powderblue;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-header {
+  background-color: purple;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-text {
+  background-color: red;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-text--big {
+  background-color: salmon;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-button {
+  background-color: seagreen;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-button .footer__place-button-text {
+  background-color: slategray;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-img-container {
+  background-color: springgreen;
+}
+
+.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-img-container .footer__place-img {
+  background-color: wheat;
+}
+
+.footer .footer--mob .footer__text-container {
+  background-color: yellow;
+}
+
+.footer .footer--mob .footer__text-container .footer__text {
+  background-color: tan;
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
