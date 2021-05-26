@@ -5,7 +5,7 @@ const sectionLogos =document.querySelector(".sliderLogos")
 const container = sectionLogos.querySelector(".sliderLogos-container")
 
 const changeWidth = function () {
-    container.style.width = `calc(${window.screen.width}px + 20%)`
+    container.style.width = `calc(${window.innerWidth}px + 20%)`
     
 }
 window.addEventListener("resize", changeWidth)
