@@ -3341,233 +3341,324 @@ body {
   }
 }
 
-.footer--desc {
-  background-color: aqua;
+.footer {
+  margin-top: 100px;
+  background-color: #1c1d39;
+}
+
+.footer .footer__list {
+  color: white;
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+
+.footer .footer__list .footer__list-element .footer__list-element-text-container {
+  padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-header {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.footer .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-icon {
+  font-size: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer .footer__list .footer__list-element .footer__contact-container {
+  padding: 5px 20px;
   display: none;
 }
 
-.footer--desc .footer__upside {
-  background-color: brown;
+.footer .footer__list .footer__list-element .footer__contact-container .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer--desc .footer__upside .info {
-  background-color: cadetblue;
+.footer .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-icon-container {
+  position: relative;
+  margin: 10px 20px 10px 10px;
+  width: 50px;
+  height: 50px;
 }
 
-.footer--desc .footer__upside .info .info__offer {
-  background-color: chartreuse;
+.footer .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-icon-container .footer__contact-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #0f5499;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-offer {
-  background-color: chocolate;
+.footer .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-number {
+  font-size: 25px;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-offer-header {
-  background-color: coral;
+.footer .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-text {
+  font-size: 15px;
+  font-weight: 200;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list {
-  background-color: crimson;
+.footer .footer__list .footer__list-element .footer__contact-container .contact__button {
+  display: block;
+  position: relative;
+  background-color: #E6175C;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 238px;
+  width: 80%;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list .info__offer-list-element {
-  background-color: darkblue;
+.footer .footer__list .footer__list-element .footer__contact-container .contact__button .contact__button-text {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 10px;
+  line-height: 13px;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-offer .info__offer-list .info__offer-list-element .info__offer-list-element-link {
-  background-color: darkcyan;
+.footer .footer__list .footer__list-element .footer__contact-container .contact__button .contact__button-text::after {
+  content: "formularz kontaktowy";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  width: 100%;
+  transition: 0.3s;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place {
-  background-color: darkgreen;
+.footer .footer__list .footer__list-element .footer__contact-container .contact__button:hover .contact__button-text {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container {
-  background-color: darkkhaki;
+.footer .footer__list .footer__list-element .footer__contact-container .contact__button:hover {
+  background-color: #b3164a;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-header {
-  background-color: darkolivegreen;
+.footer .footer__list .footer__list-element .footer__offer-container {
+  padding-bottom: 20px;
+  display: none;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-text {
-  background-color: darkred;
+.footer .footer__list .footer__list-element .footer__offer-container .footer__offer-list {
+  padding: 0 25px;
+  list-style: none;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-text--big {
-  background-color: darkseagreen;
+.footer .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element {
+  padding: 12px;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-button {
-  background-color: darkslategray;
+.footer .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element .footer__offer-list-element-link {
+  color: #939399;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-container .info__offer-place-button .info__offer-place-button-text {
-  background-color: darkviolet;
+.footer .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element .footer__offer-list-element-link::before {
+  content: "";
+  display: block;
+  background-color: #E6175C;
+  width: 5px;
+  height: 5px;
+  min-width: 5px;
+  min-height: 5px;
+  margin-right: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-img-container {
-  background-color: deeppink;
+.footer .footer__list .footer__list-element .footer__place-container {
+  padding: 10px 35px 25px 20px;
+  display: none;
 }
 
-.footer--desc .footer__upside .info .info__offer .info__offer-place .info__offer-place-img-container .info__offer-place-img {
-  background-color: deepskyblue;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-header {
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.footer--desc .footer__upside .contact {
-  background-color: deepskyblue;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-text {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #939399;
 }
 
-.footer--desc .footer__upside .contact .contact__container {
-  background-color: dimgray;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-text--big {
+  padding-top: 10px;
+  font-size: 20px;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__header {
-  background-color: dodgerblue;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-button {
+  display: block;
+  position: relative;
+  background-color: #E6175C;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-decoration: none;
+  background-color: #0f5499;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+  margin: 50px 0;
+  max-width: 238px;
+  width: 80%;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__info-container {
-  background-color: firebrick;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-button .footer__place-button-text {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 10px;
+  line-height: 13px;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__icon-container {
-  background-color: floralwhite;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-button .footer__place-button-text::after {
+  content: "zobacz nasze realizacje";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  width: 100%;
+  transition: 0.3s;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__number {
-  background-color: forestgreen;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-button:hover .footer__place-button-text {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__info-container .contact__text {
-  background-color: gold;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-button:hover {
+  background-color: #0f5499;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__button {
-  background-color: greenyellow;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-img-container {
+  width: 100%;
 }
 
-.footer--desc .footer__upside .contact .contact__container .contact__button .contact__button-text {
-  background-color: indianred;
+.footer .footer__list .footer__list-element .footer__place-container .footer__place-img-container .footer__place-img {
+  max-width: auto;
+  max-height: 100%;
 }
 
-.footer--desc .footer__downside {
-  background-color: ivory;
+.footer .footer__list .footer__list-element::after {
+  content: "";
+  min-height: 1px;
+  width: 90vw;
+  background-color: #38445e;
+  display: block;
+  margin: 0 auto;
 }
 
-.footer--desc .footer__downside .footer__downside-text {
-  background-color: lawngreen;
+.footer .footer__list .footer__list-element.active .footer__list-element-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.footer--desc .footer__downside .footer__downside-text .footer__downside-text-link {
-  background-color: lightblue;
+.footer .footer__list .footer__list-element.active .footer__contact-container {
+  display: block;
 }
 
-.footer {
-  background-color: lightcoral;
+.footer .footer__list .footer__list-element.active .footer__offer-container {
+  display: block;
 }
 
-.footer .footer--mob .footer__list {
-  background-color: lightgoldenrodyellow;
+.footer .footer__list .footer__list-element.active .footer__place-container {
+  display: block;
 }
 
-.footer .footer--mob .footer__list .footer__list-element {
-  background-color: lightgreen;
+.footer .footer__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  background-color: white;
 }
 
-.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container {
-  background-color: lightgrey;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-header {
-  background-color: lightsalmon;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__list-element-text-container .footer__list-element-icon {
-  background-color: lightskyblue;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container {
-  background-color: lime;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact {
-  background-color: magenta;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-icon {
-  background-color: maroon;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-number {
-  background-color: mediumblue;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .footer__contact .footer__contact-text {
-  background-color: mediumpurple;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .contact__button {
-  background-color: mediumpurple;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__contact-container .contact__button .contact__button-text {
-  background-color: mediumspringgreen;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__offer-container {
-  background-color: mediumvioletred;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list {
-  background-color: olive;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element {
-  background-color: palegreen;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__offer-container .footer__offer-list .footer__offer-list-element .footer__offer-list-element-link {
-  background-color: plum;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container {
-  background-color: powderblue;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-header {
-  background-color: purple;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-text {
-  background-color: red;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-text--big {
-  background-color: salmon;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-button {
-  background-color: seagreen;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-button .footer__place-button-text {
-  background-color: slategray;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-img-container {
-  background-color: springgreen;
-}
-
-.footer .footer--mob .footer__list .footer__list-element .footer__place-container .footer__place-img-container .footer__place-img {
-  background-color: wheat;
-}
-
-.footer .footer--mob .footer__text-container {
-  background-color: yellow;
-}
-
-.footer .footer--mob .footer__text-container .footer__text {
-  background-color: tan;
+.footer .footer__text-container .footer__text {
+  font-weight: 200;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  padding-bottom: 5px;
+  font-size: 13px;
 }
 
 @-webkit-keyframes opacity {

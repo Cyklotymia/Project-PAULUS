@@ -1,0 +1,235 @@
+.footer {
+    margin-top: 100px;
+    background-color: #1c1d39;
+    .footer__list {
+       color: white;
+       font-family: $font-family;
+      
+
+
+        .footer__list-element {
+            
+
+            .footer__list-element-text-container {padding: 25px 20px;
+                @include flexParent(row, nowrap,space-between, center);
+
+                .footer__list-element-header {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+
+                .footer__list-element-icon {
+                    font-size: 15px;
+                    transition: 1s;
+                }
+            }
+
+            .footer__contact-container {
+                padding: 5px 20px;
+                display: none;
+
+                .footer__contact {
+                    @include flexParent(row, nowrap,flex-start, center);
+
+                    .footer__contact-icon-container {
+                        position: relative;
+                        margin:10px 20px 10px 10px;
+                        width: 50px;
+                        height: 50px;
+                        .footer__contact-icon{
+                            @include position(absolute,50%,50%);
+                            transform:translate(-50%,-50%);
+                            font-size: 25px;
+                            color: #0f5499;
+                        }
+                    }
+
+                    .footer__contact-number {
+                        font-size: 25px;
+                    }
+
+                    .footer__contact-text {
+                        font-size: 15px;
+                        font-weight: $light-weight;
+                    }
+                }
+
+                .contact__button {
+                    display: block;
+                            position: relative;
+                            @include button;
+                            text-align: center;
+                            overflow: hidden;
+                            padding: 10px;
+                            margin: 10px auto;
+                            max-width: 238px;
+                            width: 80%;
+
+                    .contact__button-text {
+                        display: block;
+                                transition: 0.3s;
+                                font-size: 10px;
+                                line-height: 13px;
+                    }
+                    .contact__button-text::after{
+                        content: "formularz kontaktowy";
+                        position: absolute;
+                        top: -50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s;
+                        color: rgb(255, 255, 255);
+                        width: 100%;
+                        transition: 0.3s;
+                    }
+                }
+                .contact__button:hover .contact__button-text{
+                    transform: translateY(50px)
+                }
+                .contact__button:hover{
+                    background-color: #b3164a;
+                }
+            }
+            
+
+            .footer__offer-container {
+                padding-bottom: 20px;
+                display: none;
+
+                .footer__offer-list {
+                    padding: 0 25px;
+                    list-style: none;
+
+                    .footer__offer-list-element {
+                    padding: 12px;
+                   
+
+                        .footer__offer-list-element-link {
+                            color: #939399;
+                            text-decoration: none;
+                            @include flexParent(row, nowrap,flex-start, center)
+                        }
+                        .footer__offer-list-element-link::before{
+                        content: "";
+                        display: block;
+                        background-color: $darker-pink-color;
+                        width: 5px;
+                        height: 5px;
+                        min-width: 5px;
+                        min-height: 5px;
+                        
+                        margin-right: 15px
+                        ;
+
+                        transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            .footer__place-container {
+                padding: 10px 35px 25px 20px;
+                display: none;
+
+                .footer__place-header {
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+
+                }
+
+                .footer__place-text {
+                    font-size: 11px;
+                    line-height: 1.7;
+                    color: #939399;
+                }
+
+                .footer__place-text--big {
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+
+                .footer__place-button {
+                    display: block;
+                            position: relative;
+                            @include button;
+                            background-color: $blue-color;
+                            text-align: center;
+                            overflow: hidden;
+                            padding: 10px;
+                            margin: 50px 0;
+                            max-width: 238px;
+                            width: 80%;
+
+                    .footer__place-button-text {
+                        display: block;
+                        transition: 0.3s;
+                        font-size: 10px;
+                        line-height: 13px;
+                    }
+                    .footer__place-button-text::after{
+                        content: "zobacz nasze realizacje";
+                        position: absolute;
+                        top: -50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s;
+                        color: rgb(255, 255, 255);
+                        width: 100%;
+                        transition: 0.3s;
+                    }
+                }
+                .footer__place-button:hover .footer__place-button-text{
+                    transform: translateY(50px)
+                }
+                .footer__place-button:hover{
+                    background-color: $blue-color;
+                }
+
+
+                .footer__place-img-container {
+                    width: 100%;
+
+                    .footer__place-img {
+                        max-width: auto;
+                        max-height: 100%;
+                    }
+                }
+            }
+        }
+        .footer__list-element::after{
+            content: "";
+            min-height: 1px;
+            width: 90vw;
+            background-color: #38445e;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer__list-element.active{
+            .footer__list-element-icon{
+                transform: rotate(180deg)
+            }
+            .footer__contact-container{
+                display: block
+            }
+            .footer__offer-container{
+                display: block
+            }
+            .footer__place-container{
+                display: block
+            }
+        }
+    }
+
+    .footer__text-container {
+        @include flexParent(column, nowrap,space-between, center);
+        padding: 20px 0;
+        background-color: white;
+
+        .footer__text {
+           font-weight: $light-weight;
+           font-family: $font-family;
+           padding-bottom: 5px;
+           font-size: 13px;
+        }
+    }
+}
