@@ -4077,6 +4077,63 @@ body {
   }
 }
 
+.main {
+  padding-top: 80px;
+}
+
+.main .headline {
+  height: 240px;
+  width: 100%;
+  position: relative;
+}
+
+.main .headline .headline__img-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.main .headline .headline__img-container .headline__filter {
+  background-color: beige;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(245deg, #1C1D3900 0%, #1C1D39 100%) 0% 0% no-repeat padding-box;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.main .headline .headline__img-container .wrapper .headline__text-container .headline__header {
+  background-color: #74c0c0;
+}
+
+.main .headline .headline__img-container .wrapper .headline__text-container .headline__description {
+  background-color: blue;
+}
+
+.main .headline.headline--realizations .headline__img-container {
+  background-image: url("../img/banner-realizations.jpg");
+}
+
+@media (min-width: 770px) {
+  .main {
+    padding-top: 140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    padding-top: 215px;
+  }
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;

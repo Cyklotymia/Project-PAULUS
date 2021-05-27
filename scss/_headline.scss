@@ -1,0 +1,55 @@
+.main {
+    padding-top: 80px;
+
+    .headline {
+        height: 240px;
+        width: 100%;
+        position: relative;
+
+        .headline__img-container {
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+
+            .headline__filter {
+                background-color: beige;
+                @include fade;
+            }
+
+            .wrapper {
+                .headline__text-container {
+                    .headline__header {
+                        background-color: rgb(116, 192, 192);
+                    }
+
+                    .headline__description {
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+
+        &.headline--realizations .headline__img-container {
+            background-image: url("../img/banner-realizations.jpg");
+        }
+    }
+}
+
+@media (min-width:770px) {
+    .main {
+        padding-top: 140px
+    }
+}
+
+@media (min-width:1200px) {
+    .main {
+        padding-top: 200px
+    }
+}
+
+@media (min-width:1600px) {
+    .main {
+        padding-top: 215px
+    }
+}
