@@ -4519,6 +4519,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: 90vw;
 }
 
 .banner .banner__img-container .wrapper--margin .banner__content-container .banner__icon-container {
