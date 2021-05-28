@@ -1,6 +1,8 @@
 .footer {
     margin-top: 100px;
     background-color: #1c1d39;
+    
+    overflow: hidden;
 
     .footer__list {
         color: white;
@@ -223,6 +225,8 @@
 
             .footer__place-container {
                 padding: 10px 35px 25px 20px;
+                max-width: 100%;
+                overflow: hidden;
 
                 display: none;
                 opacity: 0;
@@ -319,6 +323,7 @@
                 .footer__place-img-container {
                     width: 100%;
                     max-width: 290px;
+                    margin-right: 10px;
 
                     .footer__place-img {
                         max-width: 100%;

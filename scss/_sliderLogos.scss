@@ -7,7 +7,7 @@
     .sliderLogos {
         display: block;
         margin: 62px 3vw 55px 3vw;
-        overflow: hidden;
+        
         width: calc(100vw - 6vw);
 
         .wrapper {
@@ -20,6 +20,7 @@
             .sliderLogos-container {
                 @include flexParent(row, nowrap, space-between, center);
                 transition: 0.4s linear;
+                overflow: hidden;
                 max-width: calc(1600px + 20%);
                 
 

@@ -3295,7 +3295,6 @@ body {
   .sliderLogos {
     display: block;
     margin: 62px 3vw 55px 3vw;
-    overflow: hidden;
     width: calc(100vw - 6vw);
   }
   .sliderLogos .wrapper {
@@ -3319,6 +3318,7 @@ body {
             align-items: center;
     -webkit-transition: 0.4s linear;
     transition: 0.4s linear;
+    overflow: hidden;
     max-width: calc(1600px + 20%);
   }
   .sliderLogos .wrapper .sliderLogos-container .sliderLogos-item {
@@ -3400,6 +3400,7 @@ body {
 .footer {
   margin-top: 100px;
   background-color: #1c1d39;
+  overflow: hidden;
 }
 
 .footer .footer__list {
@@ -3664,6 +3665,8 @@ body {
 
 .footer .footer__list .footer__list-element .footer__place-container {
   padding: 10px 35px 25px 20px;
+  max-width: 100%;
+  overflow: hidden;
   display: none;
   opacity: 0;
 }
@@ -3764,6 +3767,7 @@ body {
 .footer .footer__list .footer__list-element .footer__place-container .footer__place-img-container {
   width: 100%;
   max-width: 290px;
+  margin-right: 10px;
 }
 
 .footer .footer__list .footer__list-element .footer__place-container .footer__place-img-container .footer__place-img {
