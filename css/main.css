@@ -4311,6 +4311,9 @@ body {
   -webkit-transition: .3s;
   transition: .3s;
   opacity: 0;
+  display: block;
+  color: black;
+  text-decoration: none;
 }
 
 .gallery .wrapper--margin .gallery__container .gallery__element .gallery__img-container .gallery__img {
