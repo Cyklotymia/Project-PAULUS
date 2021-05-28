@@ -1,31 +1,23 @@
 function startAddAnimations() {
-
+    let bottomOfPage;
     const sectionMove = (sectionName) => {
         
-        let className=sectionName?`.${sectionName}`:null
-        
-        const section=document.querySelector(className)
-       
+        let className = sectionName ? `.${sectionName}` : null;
+        const section = document.querySelectorAll(className);
 
-        let sectionStart=section?section.offsetTop:null
-        
-        
-        bottomOfpage = window.scrollY + window.innerHeight
+        section.forEach(section => {
+            let sectionStart = section ? section.offsetTop : null;
+            bottomOfPage = window.scrollY + window.innerHeight;
 
+            if (sectionStart && bottomOfPage >= sectionStart) {
 
-        if (sectionStart && bottomOfpage >= sectionStart ) {
-            
-            section.classList.add("active")
-        }
-
-        
-
+                section.classList.add("active");
+            };
+        })
     };
-    sectionMove('gallery')
-    sectionMove('offer');
-    document.addEventListener("scroll", ()=>{
-        sectionMove('offer');
-        sectionMove('procces');
-        sectionMove('gallery');
-    })
-}
+    sectionMove('js__addAnimations');
+    document.addEventListener("scroll", () => {
+        sectionMove('js__addAnimations');
+
+    });
+};
