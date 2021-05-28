@@ -190,6 +190,54 @@ body {
   font-weight: 700;
 }
 
+.button {
+  display: block;
+  position: relative;
+  background-color: #E6175C;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  line-height: 55px;
+  max-width: 300px;
+  width: 250px;
+  height: 55px;
+}
+
+.button .button-text {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button .button-text::after {
+  content: "formularz wyceny";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.button:hover .button-text {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.button:hover {
+  background-color: #b3164a;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -4418,6 +4466,93 @@ body {
           animation: show .3s linear both;
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
+}
+
+.banner .banner__img-container {
+  background-image: url("../img/banner-realizations-down.jpg");
+  padding: 30px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.banner .banner__img-container .banner__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(245deg, #1C1D3900 0%, #1C1D39 100%) 0% 0% no-repeat padding-box;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__icon-container {
+  display: none;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__icon-container .banner__icon {
+  background-color: chartreuse;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__text-container {
+  color: white;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__text-container .banner__text {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__text-container .banner__text::after {
+  width: 50px;
+  height: 3px;
+  background-color: #0f5499;
+  content: "";
+  display: block;
+  margin: 15px 0;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__text-container .banner__text--big {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__button {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.banner .banner__img-container .wrapper--margin .banner__content-container .banner__button .banner__button-text {
+  font-size: 15px;
 }
 
 @-webkit-keyframes opacity {

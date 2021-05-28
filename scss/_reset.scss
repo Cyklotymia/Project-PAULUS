@@ -21,10 +21,57 @@ body {
     max-width: 1600px;
     width: 100%;
     max-width: 1600px;
-    
-    
+
+
 }
 
-.bold{
+.bold {
     font-weight: $bold-weight;
+}
+
+
+.button {
+    display: block;
+    position: relative;
+    @include button;
+    text-align: center;
+    overflow: hidden;
+    line-height: 55px;
+    
+  
+    max-width: 300px;
+    width: 250px;
+    height: 55px;
+
+    .button-text {
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .button-text::after {
+        content: "formularz wyceny";
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        transition: 0.3s;
+    }
+}
+
+
+
+
+
+
+.button:hover .button-text {
+    transform: translateY(50px);
+
+}
+
+.button:hover {
+    background-color: #b3164a;
 }

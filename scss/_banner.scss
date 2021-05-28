@@ -1,0 +1,68 @@
+.banner {
+    
+    
+    .banner__img-container {
+        background-image: url("../img/banner-realizations-down.jpg");
+        padding: 30px;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+.banner__filter{
+    @include fade;
+}
+        .wrapper--margin {
+            .banner__content-container {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 3;
+                @include flexParent(column, nowrap, flex-start, flex-start);
+
+                .banner__icon-container {
+                    display: none;
+
+                    .banner__icon {
+                        background-color: chartreuse;
+                    }
+                }
+
+                .banner__text-container {
+                    color: white;
+                    font-family: $font-family;
+                    font-weight: $bold-weight;
+                    margin-bottom: 20px;
+                    .banner__text {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        letter-spacing: 1.6px;
+                    }
+                    .banner__text::after{
+                        width: 50px;
+                        height: 3px;
+                        background-color: $blue-color;
+                        content: "";
+                        display: block;
+                        margin: 15px 0;
+                    }
+
+                    .banner__text--big {
+                        font-size: 15px;
+                        padding-bottom: 5px;
+                    }
+
+                    
+                }
+                .banner__button {
+                    width: 250px;
+                    height: 40px;
+                    line-height: 40px;
+
+                    .banner__button-text {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
