@@ -1,23 +1,31 @@
 .gallery {
     .wrapper--margin {
         .gallery__container {
-            padding:30px 10px;
+            padding: 30px 10px;
 
             .gallery__element {
                 margin: 20px;
                 transition: .3s;
-                opacity:0;
+                opacity: 0;
                 display: block;
                 color: black;
                 text-decoration: none;
 
                 .gallery__img-container {
 
+
                     .gallery__img {
-                        max-width: 100%;
+                        background-image: url("../img/slider2-5.jpeg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
                         max-height: 100%;
                         width: auto;
                         height: auto;
+                        max-width: 513px;
+                        height: 315px;
+                        width: 100%;
 
                     }
                 }
@@ -61,13 +69,13 @@
                 box-shadow: $gray-color 5px 5px 5px 3px;
             }
 
-            
+
         }
 
         @media (min-width:770px) {
             .gallery__container {
                 @include flexParent(row, wrap, space-between, center);
-                
+
 
                 .gallery__element {
                     flex-basis: 48%;
@@ -93,45 +101,56 @@
             }
 
         }
+      
     }
 }
+
 .gallery.active {
-                
+
     .gallery__element:nth-child(1) {
         animation: show .3s linear both;
     }
+
     .gallery__element:nth-child(2) {
         animation: show .3s linear both;
         animation-delay: .3s;
     }
+
     .gallery__element:nth-child(3) {
         animation: show .3s linear both;
         animation-delay: .6s;
     }
+
     .gallery__element:nth-child(4) {
         animation: show .3s linear both;
         animation-delay: .9s;
     }
+
     .gallery__element:nth-child(5) {
         animation: show .3s linear both;
         animation-delay: 1.2s;
     }
+
     .gallery__element:nth-child(6) {
         animation: show .3s linear both;
         animation-delay: 1.5s;
     }
+
     .gallery__element:nth-child(7) {
         animation: show .3s linear both;
         animation-delay: 1.8s;
     }
+
     .gallery__element:nth-child(8) {
         animation: show .3s linear both;
         animation-delay: 2.1s;
     }
+
     .gallery__element:nth-child(9) {
         animation: show .3s linear both;
         animation-delay: 2.4s;
     }
+
     .gallery__element:nth-child(10) {
         animation: show .3s linear both;
         animation-delay: 2.4s;

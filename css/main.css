@@ -4317,10 +4317,16 @@ body {
 }
 
 .gallery .wrapper--margin .gallery__container .gallery__element .gallery__img-container .gallery__img {
-  max-width: 100%;
+  background-image: url("../img/slider2-5.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-height: 100%;
   width: auto;
   height: auto;
+  max-width: 513px;
+  height: 315px;
+  width: 100%;
 }
 
 .gallery .wrapper--margin .gallery__container .gallery__element .gallery__text-container {
