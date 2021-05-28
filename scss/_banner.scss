@@ -1,16 +1,18 @@
 .banner {
-    
-    
+
+
     .banner__img-container {
         background-image: url("../img/banner-realizations-down.jpg");
         padding: 30px;
         height: 240px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position:center;
         position: relative;
-.banner__filter{
-    @include fade;
-}
+
+        .banner__filter {
+            @include fade;
+        }
+
         .wrapper--margin {
             .banner__content-container {
                 position: absolute;
@@ -23,7 +25,44 @@
                     display: none;
 
                     .banner__icon {
-                        background-color: chartreuse;
+                        color: white;
+
+                    }
+                }
+                @media (min-width:1050px) {
+                    .banner__icon-container{
+                        position: relative;
+                        background-color: #1C1D39;
+                        height: 50px;
+                        width: 50px;
+                        transform: rotate(-45deg);
+                        border-radius: 10px;
+                        display: block;
+                        margin-right: 25px;
+                        .banner__icon{
+                            @include position(absolute,55%,55%);
+                            width: 30px;
+                            transform:translate(-50%,-50%) rotate(-315deg) ;
+                           
+                        }
+                    }
+                }
+
+
+                @media (min-width:1500px) {
+                    .banner__icon-container{
+                        border-radius: 20px;
+                        height: 75px;
+                        width: 75px;
+                        opacity: 70%;
+                        z-index: 2;
+                        margin-right: 52px;
+                        .banner__icon{
+                            width: 38px;
+                            opacity: 1;
+                            z-index: 3;
+                            
+                        }
                     }
                 }
 
@@ -32,12 +71,14 @@
                     font-family: $font-family;
                     font-weight: $bold-weight;
                     margin-bottom: 20px;
+
                     .banner__text {
                         font-size: 10px;
                         text-transform: uppercase;
                         letter-spacing: 1.6px;
                     }
-                    .banner__text::after{
+
+                    .banner__text::after {
                         width: 50px;
                         height: 3px;
                         background-color: $blue-color;
@@ -45,14 +86,40 @@
                         display: block;
                         margin: 15px 0;
                     }
+                    @media (min-width:1600px) {
+                        .banner__text::after{
+                            margin: 23px 0;
+                            height: 4px;
+                            width: 70px;
+                        }
+                    }
 
                     .banner__text--big {
                         font-size: 15px;
                         padding-bottom: 5px;
                     }
+                    @media (min-width:770px) {
+                        .banner__text--big{
+                            font-size: vw(15px,770px);
+                        }
+                    }
 
+                    @media (min-width:1800px) {
+                        .banner__text--big{
+                            font-size: 46px;
+                            line-height: 56px;
+                        }
+                        .banner__text{
+                            font-size: 16px;
+                        }
+                    }
                     
+
+                   
+
+
                 }
+
                 .banner__button {
                     width: 250px;
                     height: 40px;
@@ -62,7 +129,47 @@
                         font-size: 15px;
                     }
                 }
+
+                @media (min-width:1050px) {
+                   .banner__button{
+                       margin-left: 20%;
+                   } 
+                }
+                @media (min-width:1600px) {
+                    .banner__button{
+                        margin-left: 200px;
+                        height: 55px;
+                        width: 250px;
+                        line-height: 55px;
+                    } 
+                 }
             }
+
+            @media (min-width:770px) {
+                .banner__content-container{
+                    @include flexParent(row, nowrap, space-around, center);
+                    width: 100%;
+                }
+            }
+            @media (min-width:1050px) {
+                .banner__content-container{
+                    @include flexParent(row, nowrap, flex-start, center);
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media (min-width:770px) {
+        .banner__img-container{
+          height: 300px;
+           
+        }
+    }
+    @media (min-width:1500px) {
+        .banner__img-container{
+          height: 350px;
+          background-size: cover;
+           
         }
     }
 }
