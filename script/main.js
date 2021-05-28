@@ -3,6 +3,7 @@ const nav = document.querySelector(".header__nav");
 
 const offerSection=document.querySelector(".offer")
 const proccesSection=document.querySelector(".procces")
+const gallerySection=document.querySelector(".gallery")
 
 let bottomOfpage;
 
