@@ -1,38 +1,31 @@
 function startAddAnimations() {
 
-
-    let offerSectionStart;
-    let proccesSectionStart;
-    let gallerySectionStart;
-
-
-
-
-
-    const sectionMove = () => {
+    const sectionMove = (sectionName) => {
         
-        offerSectionStart=offerSection?offerSection.offsetTop:null
-        proccesSectionStart=proccesSection?proccesSection.offsetTop:null
-        gallerySectionStart=gallerySection?gallerySection.offsetTop:null
+        let className=sectionName?`.${sectionName}`:null
+        
+        const section=document.querySelector(className)
+       
+
+        let sectionStart=section?section.offsetTop:null
+        
         
         bottomOfpage = window.scrollY + window.innerHeight
 
 
-        if (offerSectionStart && bottomOfpage >= offerSectionStart ) {
+        if (sectionStart && bottomOfpage >= sectionStart ) {
             
-            offerSection.classList.add("active")
+            section.classList.add("active")
         }
 
-        if ( proccesSectionStart && bottomOfpage >= proccesSectionStart ) {
-            
-            proccesSection.classList.add("active")
-        }
-        if (gallerySectionStart && bottomOfpage >= gallerySectionStart ) {
-            
-            gallerySection.classList.add("active")
-        }
+        
 
     };
-    sectionMove()
-    document.addEventListener("scroll", sectionMove)
+    sectionMove('gallery')
+    sectionMove('offer');
+    document.addEventListener("scroll", ()=>{
+        sectionMove('offer');
+        sectionMove('procces');
+        sectionMove('gallery');
+    })
 }
