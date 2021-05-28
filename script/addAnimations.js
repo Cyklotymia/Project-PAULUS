@@ -9,7 +9,7 @@ function startAddAnimations() {
 
 
 
-    const SectionMove = () => {
+    const sectionMove = () => {
         
         offerSectionStart=offerSection?offerSection.offsetTop:null
         proccesSectionStart=proccesSection?proccesSection.offsetTop:null
@@ -33,5 +33,6 @@ function startAddAnimations() {
         }
 
     };
-    document.addEventListener("scroll", SectionMove)
+    sectionMove()
+    document.addEventListener("scroll", sectionMove)
 }
