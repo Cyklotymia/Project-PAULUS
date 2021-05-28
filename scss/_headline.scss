@@ -10,21 +10,93 @@
 
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             height: 100%;
 
             .headline__filter {
-                background-color: beige;
+               
                 @include fade;
             }
 
-            .wrapper {
+            .wrapper--margin {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1600px;
+                height: 100%;
                 .headline__text-container {
+                    @include position(absolute,50%,50%);
+                    transform: translate(-50%,-50%);
+                    width: 100%;
+                    padding:20px;
+                    z-index: 3;
+                    @include flexParent(row,wrap,flex-start,center);
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: $font-family;
+                    text-align: left;
+                    padding-left: 4vw;
+                    padding-right: 4vw;
+                    
                     .headline__header {
-                        background-color: rgb(116, 192, 192);
+                       font-weight:$bold-weight; 
+                       font-size: vw(25px,320px);
+                       width: 100%;
                     }
+                    @media (min-width:500px) {
+                        .headline__header{
+                            font-size: 35px;
+                        }
+                        
+                    }
+                    @media (min-width:770px) {
+                        .headline__header{
+                            font-size: vw(54px,1920px);
+                        }
+                        
+                    }
+                    @media (min-width:1920px) {
+                        .headline__header{
+                            font-size: 54px;
+                        }
+                        
+                    }
+                    .headline__header::after {
+                        content:"";
+                        display: block;
+                        background-color: $blue-color;
+                        width: 10vw;
+                        height: 5px;
+                        margin: 20px 0;
+                        max-width: 53px;
+                        
+                     }
+ 
 
                     .headline__description {
-                        background-color: blue;
+                        font-weight:$light-weight;
+                        letter-spacing: 1.35px;
+                        font-size: 8px;
+                        width: 100%;
+                    }
+                    @media (min-width:1200px) {
+                        .headline__description{
+                           font-size:vw(15px,1920px) ;
+                        }
+                    }
+                    @media (min-width:1920px) {
+                        .headline__description{
+                           font-size:15px ;
+                        }
+                    }
+                }
+                @media (min-width:1200px) {
+                    .headline__text-container{
+                        padding-left: 10%;
+                    }
+                }
+                @media (min-width:1920px) {
+                    .headline__text-container{
+                        padding-left: 233px;
                     }
                 }
             }
@@ -32,6 +104,16 @@
 
         &.headline--realizations .headline__img-container {
             background-image: url("../img/banner-realizations.jpg");
+        }
+    }
+    @media (min-width:770px) {
+        .headline{
+            height: 300px;
+        }
+    }
+    @media (min-width:1200px) {
+        .headline{
+            height: 340px;
         }
     }
 }
