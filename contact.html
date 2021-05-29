@@ -179,25 +179,25 @@
                 <div class="contact__form-container">
                     <h3 class="contact__header">Formularz <b class="bold">kontaktowy</b></h3>
 
-                    <form action="">
                     <div class="contact__label">
-                        <p class="contact__text">Imię i nazwisko<span class="red">*</span></p>
-                        <input class="contact__input" type="text" placeholder="Twoje imię i nazwisko">
+                        <label for="name" class="contact__text">Imię i nazwisko<span class="red">*</span></label>
+                        <input id="name" class="contact__input" type="text" placeholder="Twoje imię i nazwisko">
+                        
                     </div>
                     <div class="contact__label">
-                        <p class="contact__text">Telefon<span class="red">*</span></p>
-                        <input class="contact__input" type="text" placeholder="Wpisz swój numer telefonu">
+                        <label for="phone" class="contact__text">Telefon<span class="red">*</span></label>
+                        <input id="phone" type="number" class="contact__input" placeholder="Wpisz swój numer telefonu">
                     </div>
                     <div class="contact__label">
-                        <p class="contact__text">Adres e-mail<span class="red">*</span></p>
-                        <input class="contact__input" type="text" placeholder="Wpisz swój adres e-mail">
+                        <label for="email" class="contact__text">Adres e-mail<span class="red">*</span></label>
+                        <input id="email" class="contact__input" type="text" placeholder="Wpisz swój adres e-mail">
                     </div>
 
                     <div class="contact__label">
-                        <p class="contact__text">Wiadomość<span class="red">*</span></p>
-                        <input class="contact__input" type="text" placeholder="Wiadomość">
+                        <label for="message" class="contact__text">Wiadomość<span class="red">*</span></label>
+                        <textarea class="contact__message" id="message" placeholder="Wiadomość" style="resize: none;"></textarea>
                     </div>
-                </form>
+                
 
                     <div class="contact__rodo-container">
                         <p class="contact__rodo">Administratorem danych osobowych przekazanych za pomocą powyższego
@@ -208,10 +208,10 @@
 
                     <div class="contact__send-container">
                         <p class="contact__require"><span class="red">*</span>pole wymagane</p>
-                        <a href="#" class="contact__button button">
-                            <span class="contact__button-text button-text">wyślij formularz</span></a>
+                        <button  class="contact__button button">
+                            <span class="contact__button-text button-text">wyślij formularz</span></button>
                     </div>
-
+</form>
 
                 </div>
             </div>

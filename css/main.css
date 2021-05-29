@@ -249,6 +249,19 @@ body {
   color: red;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -4828,6 +4841,17 @@ body {
   padding: 0 10px;
 }
 
+.contact .contact__form-container .contact__label .contact__message {
+  height: 130px;
+  display: block;
+  background-color: #f7f7fa;
+  border: none;
+  width: 100%;
+  padding: 20px 10px;
+  font-weight: 200;
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
+
 .contact .contact__form-container .contact__rodo-container .contact__rodo {
   font-size: 9px;
   color: #bdbdbd;
@@ -4851,8 +4875,8 @@ body {
   content: "wyślij formularz";
 }
 
-.contact .contact__form-container .contact__label:nth-child(4) .contact__input {
-  height: 130px;
+.contact .contact__form-container .contact__send-container .contact__button .contact__button-text::after {
+  content: "wyślij formularz";
 }
 
 @-webkit-keyframes opacity {
