@@ -1,8 +1,9 @@
 .contact {
     max-width: 100%;
-    @include flexParent(column, nowrap, center, center);
+    
     padding: 30px 20px;
-
+.contact__container{
+    @include flexParent(column, nowrap, flex-start, flex-start);
     .contact__info-container {
         padding-bottom: 50px;
 
@@ -48,6 +49,13 @@
             }
         }
     }
+    @media (min-width:770px) {
+        .contact__info-container{
+            flex-basis: 50%;
+            
+           
+        }
+    }
 
     .contact__form-container {
         font-family: $font-family;
@@ -68,6 +76,13 @@
                 font-weight: $light-weight;
                 
             }
+            @media (min-width:770px) {
+                .contact__text{
+                    min-width: 100px;
+                    padding-top: 10px;
+                    margin-right: 10px;
+                }
+            }
 
             .contact__input {
                 height: 60px;
@@ -75,7 +90,21 @@
                 border:none;
                 width:100%;
                 padding: 0 10px;
+                font-family: $font-family;
+                
+                border-bottom: solid 1px #f7f7fa;
+                transition: .3s linear border-color;
 
+            }
+            .contact__input:focus{
+                outline: none;
+                border-bottom: solid 1px $pink-color;
+
+            }
+            @media (min-width:770px) {
+                .contact__input{
+                   font-size: 10px;
+                }
             }
             .contact__message{
                  height:130px ;
@@ -87,11 +116,29 @@
                  padding: 20px 10px;
                  font-weight: $light-weight;
                  font-family: $font-family;
+                 border-bottom: solid 1px #f7f7fa;
+                transition: .3s linear border-color;
+            }
+            .contact__message:focus{
+                outline: none;
+                border-bottom: solid 1px $pink-color;
+
+            }
+            @media (min-width:770px) {
+                .contact__message{
+                   font-size: 10px;
+                }
             }
             
 
            
-        } .contact__rodo-container {
+        }
+        @media (min-width:770px) {
+            .contact__label{
+                @include flexParent(row,nowrap,flex-start,flex-start);
+            }
+        }
+         .contact__rodo-container {
                 .contact__rodo {
                     font-size: 9px;
                     color: #bdbdbd;
@@ -99,16 +146,28 @@
                 }
             }
 
+            @media (min-width:770px) {
+                .contact__rodo-container{
+                    @include flexParent(row,nowrap,flex-end,flex-end);
+                    .contact__rodo{
+                        flex-basis:70%;
+                        margin-bottom: 10px;
+                    }
+
+                }
+            }
             .contact__send-container {
                 padding-top: 10px;
                 
                 .contact__require {
                     font-family: $font-family;
                     font-size: 15px;
+                    margin-right: 10px;
                 }
 
                 .contact__button {
                     margin-top: 20px;
+                    background-color: $blue-color;
                     .contact__button-text {
                         content: "wyślij formularz";
                     }
@@ -116,7 +175,30 @@
                         content: "wyślij formularz";
                     }
                 }
+                @media (min-width:770px) {
+                    .contact__button{
+                        margin-top: 0;
+                    }
+                }
             }
-        
+        @media (min-width:770px) {
+            .contact__send-container {
+                @include flexParent(row,nowrap,space-between,flex-start)
+            }
+        }
+    }
+    @media (min-width:770px) {
+        .contact__form-container{
+            flex-basis: 50%;
+            border-left: 1px solid #dcdde0;
+            padding-left: 30px;
+            padding-right: 10%;
+           
+        }
+    }}
+    @media (min-width:770px) {
+        .contact__container{
+        @include flexParent(row, nowrap, flex-start, flex-start);
+        }
     }
 }

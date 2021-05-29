@@ -4730,6 +4730,10 @@ input[type=number] {
 
 .contact {
   max-width: 100%;
+  padding: 30px 20px;
+}
+
+.contact .contact__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4739,31 +4743,30 @@ input[type=number] {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.contact .contact__info-container {
+.contact .contact__container .contact__info-container {
   padding-bottom: 50px;
 }
 
-.contact .contact__info-container .contact__info {
+.contact .contact__container .contact__info-container .contact__info {
   font-family: "Ubuntu", "Arial", sans-serif;
   color: #1B1432;
 }
 
-.contact .contact__info-container .contact__info .contact__header {
+.contact .contact__container .contact__info-container .contact__info .contact__header {
   font-size: 25px;
   font-weight: 200;
   margin-bottom: 50px;
 }
 
-.contact .contact__info-container .contact__info .contact__element {
+.contact .contact__container .contact__info-container .contact__info .contact__element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4782,7 +4785,7 @@ input[type=number] {
   margin-bottom: 40px;
 }
 
-.contact .contact__info-container .contact__info .contact__element .contact__icon-container {
+.contact .contact__container .contact__info-container .contact__info .contact__element .contact__icon-container {
   background-color: #E6175C;
   min-width: 50px;
   height: 50px;
@@ -4793,7 +4796,7 @@ input[type=number] {
   border-radius: 10px;
 }
 
-.contact .contact__info-container .contact__info .contact__element .contact__icon-container .contact__icon {
+.contact .contact__container .contact__info-container .contact__info .contact__element .contact__icon-container .contact__icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4803,45 +4806,75 @@ input[type=number] {
   color: white;
 }
 
-.contact .contact__info-container .contact__info .contact__element .contact__number {
+.contact .contact__container .contact__info-container .contact__info .contact__element .contact__number {
   font-size: 25px;
 }
 
-.contact .contact__info-container .contact__info .contact__element .contact__text {
+.contact .contact__container .contact__info-container .contact__info .contact__element .contact__text {
   font-size: 15px;
 }
 
-.contact .contact__form-container {
+@media (min-width: 770px) {
+  .contact .contact__container .contact__info-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.contact .contact__container .contact__form-container {
   font-family: "Ubuntu", "Arial", sans-serif;
   color: #1B1432;
 }
 
-.contact .contact__form-container .contact__header {
+.contact .contact__container .contact__form-container .contact__header {
   font-size: 25px;
   font-weight: 200;
   margin-bottom: 50px;
 }
 
-.contact .contact__form-container .contact__label {
+.contact .contact__container .contact__form-container .contact__label {
   margin-bottom: 15px;
 }
 
-.contact .contact__form-container .contact__label .contact__text {
+.contact .contact__container .contact__form-container .contact__label .contact__text {
   color: black;
   font-size: 13px;
   padding-bottom: 2px;
   font-weight: 200;
 }
 
-.contact .contact__form-container .contact__label .contact__input {
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__label .contact__text {
+    min-width: 100px;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+.contact .contact__container .contact__form-container .contact__label .contact__input {
   height: 60px;
   background-color: #f7f7fa;
   border: none;
   width: 100%;
   padding: 0 10px;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  border-bottom: solid 1px #f7f7fa;
+  -webkit-transition: .3s linear border-color;
+  transition: .3s linear border-color;
 }
 
-.contact .contact__form-container .contact__label .contact__message {
+.contact .contact__container .contact__form-container .contact__label .contact__input:focus {
+  outline: none;
+  border-bottom: solid 1px #ff3366;
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__label .contact__input {
+    font-size: 10px;
+  }
+}
+
+.contact .contact__container .contact__form-container .contact__label .contact__message {
   height: 130px;
   display: block;
   background-color: #f7f7fa;
@@ -4850,33 +4883,150 @@ input[type=number] {
   padding: 20px 10px;
   font-weight: 200;
   font-family: "Ubuntu", "Arial", sans-serif;
+  border-bottom: solid 1px #f7f7fa;
+  -webkit-transition: .3s linear border-color;
+  transition: .3s linear border-color;
 }
 
-.contact .contact__form-container .contact__rodo-container .contact__rodo {
+.contact .contact__container .contact__form-container .contact__label .contact__message:focus {
+  outline: none;
+  border-bottom: solid 1px #ff3366;
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__label .contact__message {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.contact .contact__container .contact__form-container .contact__rodo-container .contact__rodo {
   font-size: 9px;
   color: #bdbdbd;
   line-height: 1.5;
 }
 
-.contact .contact__form-container .contact__send-container {
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__rodo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact .contact__container .contact__form-container .contact__rodo-container .contact__rodo {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-bottom: 10px;
+  }
+}
+
+.contact .contact__container .contact__form-container .contact__send-container {
   padding-top: 10px;
 }
 
-.contact .contact__form-container .contact__send-container .contact__require {
+.contact .contact__container .contact__form-container .contact__send-container .contact__require {
   font-family: "Ubuntu", "Arial", sans-serif;
   font-size: 15px;
+  margin-right: 10px;
 }
 
-.contact .contact__form-container .contact__send-container .contact__button {
+.contact .contact__container .contact__form-container .contact__send-container .contact__button {
   margin-top: 20px;
+  background-color: #0f5499;
 }
 
-.contact .contact__form-container .contact__send-container .contact__button .contact__button-text {
+.contact .contact__container .contact__form-container .contact__send-container .contact__button .contact__button-text {
   content: "wyślij formularz";
 }
 
-.contact .contact__form-container .contact__send-container .contact__button .contact__button-text::after {
+.contact .contact__container .contact__form-container .contact__send-container .contact__button .contact__button-text::after {
   content: "wyślij formularz";
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__send-container .contact__button {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container .contact__send-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container .contact__form-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    border-left: 1px solid #dcdde0;
+    padding-left: 30px;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 770px) {
+  .contact .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @-webkit-keyframes opacity {
