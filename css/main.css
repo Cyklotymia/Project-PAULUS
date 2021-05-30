@@ -5076,6 +5076,21 @@ input[type=number] {
   }
 }
 
+.map {
+  overflow: hidden;
+  position: relative;
+  max-height: 500px;
+  height: 500px;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
