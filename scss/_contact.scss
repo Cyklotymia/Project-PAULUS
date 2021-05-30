@@ -1,13 +1,66 @@
 .contact {
     max-width: 100%;
-    
-    padding: 30px 20px;
-.contact__container{
-    @include flexParent(column, nowrap, flex-start, flex-start);
-    .contact__info-container {
-        padding-bottom: 50px;
 
-        .contact__info {
+    padding: 30px 20px;
+
+    .contact__container {
+        @include flexParent(column, nowrap, flex-start, flex-start);
+
+        .contact__info-container {
+            padding-bottom: 50px;
+
+            .contact__info {
+                font-family: $font-family;
+                color: #1B1432;
+
+                .contact__header {
+                    font-size: 25px;
+                    font-weight: $light-weight;
+                    margin-bottom: 50px;
+                }
+
+                .contact__element {
+                    @include flexParent(row, nowrap, flex-start, center);
+                    margin-bottom: 40px;
+
+                    .contact__icon-container {
+                        background-color: $darker-pink-color;
+                        min-width: 50px;
+                        height: 50px;
+                        position: relative;
+                        margin-right: 30px;
+                        transform: rotate(-45deg);
+                        border-radius: 10px;
+
+                        .contact__icon {
+                            @include position(absolute, 50%, 50%);
+                            transform: translate(-50%, -50%) rotate(-315deg);
+                            font-size: 25px;
+                            color: white
+                        }
+                    }
+
+                    .contact__number {
+                        font-size: 25px;
+                    }
+
+                    .contact__text {
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+
+        @media (min-width:770px) {
+            .contact__info-container {
+                flex-basis: 50%;
+
+
+            }
+        }
+
+        .contact__form-container {
             font-family: $font-family;
             color: #1B1432;
 
@@ -17,188 +70,206 @@
                 margin-bottom: 50px;
             }
 
-            .contact__element {
-                @include flexParent(row, nowrap, flex-start, center);
-                margin-bottom: 40px;
+            .contact__label {
+                margin-bottom: 15px;
 
-                .contact__icon-container {
-                    background-color: $darker-pink-color;
-                    min-width: 50px;
-                    height: 50px;
-                    position: relative;
-                    margin-right: 30px;
-                    transform: rotate(-45deg);
-                    border-radius: 10px;
+                .contact__text {
+                    color: black;
+                    font-size: 13px;
+                    padding-bottom: 2px;
+                    font-weight: $light-weight;
 
-                    .contact__icon {
-                        @include position(absolute, 50%, 50%);
-                        transform: translate(-50%, -50%) rotate(-315deg);
-                        font-size: 25px;
-                        color: white
+                }
+
+                @media (min-width:770px) {
+                    .contact__text {
+                        min-width: 100px;
+                        padding-top: 10px;
+                        margin-right: 10px;
                     }
                 }
 
-                .contact__number {
-                    font-size: 25px;
+                @media(min-width:1600px) {
+                    .contact__text {
+                        font-size: 16px;
+                        min-width: 200px;
+                        
+                    }
                 }
 
-                .contact__text {
-                    font-size: 15px;
+                .contact__input {
+                    height: 60px;
+                    background-color: #f7f7fa;
+                    border: none;
+                    width: 100%;
+                    padding: 0 10px;
+                    font-family: $font-family;
+
+                    border-bottom: solid 1px #f7f7fa;
+                    transition: .3s linear border-color;
+
                 }
 
+                .contact__input:focus {
+                    outline: none;
+                    border-bottom: solid 1px $pink-color;
+
+                }
+
+                @media (min-width:770px) {
+                    .contact__input {
+                        font-size: 10px;
+                        height: 35px;
+
+                    }
+                }
+
+                @media (min-width:1200px) {
+                    .contact__input {
+                        font-size: 12px;
+                        height: 50px;
+                        margin-left: 10%;
+                       
+                    }
+                }
+
+                @media (min-width:1600px) {
+                    .contact__input {
+                        font-size: 16px;
+                        height: 61px;
+                        min-width: 572px
+
+                    }
+                }
+
+                .contact__message {
+                    height: 130px;
+                    display: block;
+
+                    background-color: #f7f7fa;
+                    border: none;
+                    width: 100%;
+                    padding: 20px 10px;
+                    font-weight: $light-weight;
+                    font-family: $font-family;
+                    border-bottom: solid 1px #f7f7fa;
+                    transition: .3s linear border-color;
+                }
+
+                .contact__message:focus {
+                    outline: none;
+                    border-bottom: solid 1px $pink-color;
+
+                }
+
+                @media (min-width:770px) {
+                    .contact__message {
+                        font-size: 10px;
+                        margin-left: 10%;
+                    }
+                }
+                @media (min-width:1600px) {
+                    .contact__message {
+                        font-size: 16px;
+                        min-width: 572px
+                        
+                    }
+                }
+
+
+
             }
-        }
-    }
-    @media (min-width:770px) {
-        .contact__info-container{
-            flex-basis: 50%;
-            
-           
-        }
-    }
 
-    .contact__form-container {
-        font-family: $font-family;
-        color: #1B1432;
-
-        .contact__header {
-            font-size: 25px;
-            font-weight: $light-weight;
-            margin-bottom: 50px;
-        }
-
-        .contact__label {
-            margin-bottom: 15px;
-            .contact__text {
-                color: black;
-                font-size: 13px;
-                padding-bottom: 2px;
-                font-weight: $light-weight;
-                
-            }
             @media (min-width:770px) {
-                .contact__text{
-                    min-width: 100px;
-                    padding-top: 10px;
-                    margin-right: 10px;
+                .contact__label {
+                    @include flexParent(row, nowrap, flex-start, flex-start);
                 }
             }
 
-            .contact__input {
-                height: 60px;
-                background-color:#f7f7fa;
-                border:none;
-                width:100%;
-                padding: 0 10px;
-                font-family: $font-family;
-                
-                border-bottom: solid 1px #f7f7fa;
-                transition: .3s linear border-color;
-
-            }
-            .contact__input:focus{
-                outline: none;
-                border-bottom: solid 1px $pink-color;
-
-            }
-            @media (min-width:770px) {
-                .contact__input{
-                   font-size: 10px;
-                }
-            }
-            .contact__message{
-                 height:130px ;
-                 display: block;
-                 
-                 background-color:#f7f7fa;
-                 border:none;
-                 width:100%;
-                 padding: 20px 10px;
-                 font-weight: $light-weight;
-                 font-family: $font-family;
-                 border-bottom: solid 1px #f7f7fa;
-                transition: .3s linear border-color;
-            }
-            .contact__message:focus{
-                outline: none;
-                border-bottom: solid 1px $pink-color;
-
-            }
-            @media (min-width:770px) {
-                .contact__message{
-                   font-size: 10px;
-                }
-            }
-            
-
-           
-        }
-        @media (min-width:770px) {
-            .contact__label{
-                @include flexParent(row,nowrap,flex-start,flex-start);
-            }
-        }
-         .contact__rodo-container {
+            .contact__rodo-container {
                 .contact__rodo {
                     font-size: 9px;
                     color: #bdbdbd;
-                    line-height:1.5 ;
+                    line-height: 1.5;
                 }
             }
 
             @media (min-width:770px) {
-                .contact__rodo-container{
-                    @include flexParent(row,nowrap,flex-end,flex-end);
-                    .contact__rodo{
-                        flex-basis:70%;
+                .contact__rodo-container {
+                    @include flexParent(row, nowrap, flex-end, flex-end);
+
+                    .contact__rodo {
+                        flex-basis: 70%;
                         margin-bottom: 10px;
                     }
 
                 }
             }
+            @media (min-width:1600px) {
+                .contact__rodo-container {
+                    margin-left: 10%;
+
+                }
+            }
+
             .contact__send-container {
                 padding-top: 10px;
-                
+
                 .contact__require {
                     font-family: $font-family;
-                    font-size: 15px;
+                    font-size: 16px;
                     margin-right: 10px;
+                    line-height: 16px;
                 }
 
                 .contact__button {
                     margin-top: 20px;
                     background-color: $blue-color;
+
                     .contact__button-text {
                         content: "wyślij formularz";
                     }
+
                     .contact__button-text::after {
                         content: "wyślij formularz";
                     }
                 }
+
                 @media (min-width:770px) {
-                    .contact__button{
+                    .contact__button {
                         margin-top: 0;
                     }
                 }
+
+                @media (min-width:1600px) {
+                    .contact__button {
+                        font-size: 15px;
+                        width: 342px;
+                        height: 55px;
+                    }
+                }
             }
+
+            @media (min-width:770px) {
+                .contact__send-container {
+                    @include flexParent(row, nowrap, space-between, center)
+                }
+            }
+        }
+
         @media (min-width:770px) {
-            .contact__send-container {
-                @include flexParent(row,nowrap,space-between,flex-start)
+            .contact__form-container {
+                flex-basis: 50%;
+                border-left: 1px solid #dcdde0;
+                padding-left: 30px;
+                padding-right: 100px
             }
         }
     }
+
     @media (min-width:770px) {
-        .contact__form-container{
-            flex-basis: 50%;
-            border-left: 1px solid #dcdde0;
-            padding-left: 30px;
-            padding-right: 10%;
-           
-        }
-    }}
-    @media (min-width:770px) {
-        .contact__container{
-        @include flexParent(row, nowrap, flex-start, flex-start);
+        .contact__container {
+            @include flexParent(row, nowrap, flex-start, flex-start);
         }
     }
 }
